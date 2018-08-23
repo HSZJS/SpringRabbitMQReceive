@@ -11,7 +11,7 @@ public class MessageConsumer implements ChannelAwareMessageListener {
 	public void onMessage(Message message, Channel channel) throws Exception {
 		try {
 			System.out.println("consumer receive message------->:{}" + message);
-			Thread.sleep(2*1000);
+			Thread.sleep(200*1000);
 		} catch (InterruptedException e) {
 			throw e;
 		} finally {
